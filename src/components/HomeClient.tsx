@@ -6,7 +6,7 @@ import { MapView } from "./MapView";
 import { SlidingSheet } from "./SlidingSheet";
 import { SearchBar } from "./SearchBar";
 import { NavigationConfirmModal } from "./NavigationConfirmModal";
-import { BottomNavigation } from "./BottomNavigation";
+// import { BottomNavigation } from "./BottomNavigation";
 
 type UserLocation = { lat: number; lng: number };
 
@@ -155,7 +155,7 @@ export function HomeClient() {
         isExpanded={isSheetExpanded}
         onExpandedChange={setIsSheetExpanded}
       />
-      <BottomNavigation />
+      {/* <BottomNavigation /> */}
       <NavigationConfirmModal
         station={selectedStation}
         onClose={() => setSelectedStation(null)}
